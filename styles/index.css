@@ -5,3 +5,56 @@
     background-color: #010101;
     color: #ffffff;
 }
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Oswald";
+    height: 100vh;
+}
+
+#appbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+#icon {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#optionsList {
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+}
+
+.appstoreBtn {
+    width: 150px;
+    height: 150px;
+}
+
+#heroSrimmer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 170px;
+    font-weight: bolder;
+}
+
+.earthimageBox {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#earthimage {
+    width: 400px;
+}
