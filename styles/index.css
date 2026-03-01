@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #010101;
     color: #ffffff;
 }
 
@@ -13,6 +12,7 @@ ul {
 body {
     font-family: "Oswald";
     height: 100vh;
+    background-color: #010101;
 }
 
 #appbar {
@@ -57,4 +57,115 @@ body {
 
 #earthimage {
     width: 400px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+    gap: 200px;
+    margin-bottom: 200px;
+}
+
+#heroImg {
+    width: 420px;
+}
+
+.heroLeftText {
+    width: 350px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: #ffffff80;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.getStarted {
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #010101;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.requestDemo {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#statistic {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#statHeadline {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statHeadlineText {
+    width: 60%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #deb440;
+    margin-bottom: 50px;
+}
+
+#statCards { 
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    grid-template-areas:
+        "first second ."
+        "ribbon third fourth";
+    gap: 12px;
+    align-items: stretch;
+}
+
+#firstCard  { grid-area: first;  background: #9be8b2; }
+#secondCard { grid-area: second; background: #a9ecea; }
+#thirdCard  { grid-area: third;  background: #f6cfd8; }
+#fourthCard { grid-area: fourth; background: #ffffff; }
+
+.statCard {
+    width: 300px;
+    height: 100px;
+    background-color: #ff0000ab;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.statDescription {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 110px;
+}
+
+.statNumber {
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;
 }
