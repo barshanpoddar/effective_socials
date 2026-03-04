@@ -230,6 +230,8 @@ body {
     }
 }
 
+/* Slide up and down Animation with AI take total of 3 minutes and i think its better to make animation with AI if its take less time to make for the scratch */
+
 .secondStatImg {
     position: absolute;
     bottom: -50px;
