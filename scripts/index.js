@@ -30,3 +30,18 @@ if (statCards.length) {
 		revealCards();
 	}
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+	const fastStatImg = document.querySelector(".fastStatImg");
+	const secondStatImg = document.querySelector(".secondStatImg");
+
+	requestAnimationFrame(() => {
+		if (fastStatImg) {
+			fastStatImg.classList.add("show");
+		}
+
+		if (secondStatImg) {
+			secondStatImg.classList.add("show");
+		}
+	});
+});
