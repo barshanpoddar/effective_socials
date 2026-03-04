@@ -1,3 +1,31 @@
+.yellow {
+    color: #deb440;
+}
+
+.black {
+    color: #010101;
+}
+
+.pink {
+    color: #e695a0;
+}
+
+.mintGreen {
+    color: #a1f7af;
+}
+
+.yellowStroke {
+    -webkit-text-stroke: 1.5px #deb440;
+}
+
+.blackStroke {
+    -webkit-text-stroke: 1.5px #010101;
+}
+
+.pinkStroke {
+    -webkit-text-stroke: 1.5px #e695a0;
+}
+
 .buttons {
     display: flex;
     gap: 20px;
