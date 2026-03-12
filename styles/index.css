@@ -57,21 +57,11 @@ body {
     font-weight: bolder;
     white-space: nowrap;
     width: max-content;
-    animation: heroCarouselSlide 14s linear infinite;
+    animation: CarouselSlide 14s linear infinite;
 }
 
 #heroSection {
     overflow: hidden;
-}
-
-@keyframes heroCarouselSlide {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
 }
 
 .earthimageBox {
@@ -88,24 +78,6 @@ body {
     animation: earthSpin 7s linear infinite;
 }
 
-@keyframes earthSpin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    28.57% {
-        transform: rotate(480deg);
-    }
-
-    71.43% {
-        transform: rotate(600deg);
-    }
-
-    100% {
-        transform: rotate(1080deg);
-    }
-}
-
 #hero {
     width: 100%;
     height: fit-content;
@@ -119,13 +91,13 @@ body {
     width: 420px;
 }
 
-#heroLeftText {
+.downloadStatement {
     min-width: 350px;
     max-width: 500px;
     font-size: 19px;
     font-family: sans-serif;
     color: var(--text-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     line-height: 30px;
 }
 
@@ -255,20 +227,8 @@ body {
     transform: translateY(-70px);
 }
 
-.fastStatImg.show {
+.fastStatImg {
     animation: flyInFromTop 1s ease-out forwards;
-}
-
-@keyframes flyInFromTop {
-    from {
-        transform: translateY(-70px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 /* Slide up and down Animation with AI take total of 3 minutes and i think its better to make animation with AI if its take less time to make for the scratch */
@@ -283,18 +243,6 @@ body {
 
 .secondStatImg.show {
     animation: slideUpIn 1s ease-out forwards;
-}
-
-@keyframes slideUpIn {
-    from {
-        transform: translateY(70px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 #statCardHeading {
@@ -332,6 +280,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: var(--text-color);
+    line-height: 60px;
 }
 
 #bigcardWraper {
@@ -354,7 +303,7 @@ body {
     justify-content: center;
 }
 
-.big1textSmall {
+.big1textSmall, .big2textSmall, .big3textSmall {
     font-size: 13px;
     font-family: sans-serif;
     color: var(--low-opacity-text);
@@ -374,10 +323,6 @@ body {
     overflow: hidden;
 }
 
-#big2contentWrapper {
-    width: 40%;
-}
-
 .NumberAndHeading {
     display: flex;
     flex-direction: column;
@@ -390,23 +335,25 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: start; */
     text-align: start;
-}
-
-.big2textSmall {
-    font-size: 13px;
-    font-family: sans-serif;
-    color: var(--low-opacity-text);
-    margin-left: 80px;
-    max-width: 400px;
 }
 
 #buttomCarousel {
     font-size: 170px;
     font-weight: bold;
     text-transform: uppercase;
-    animation: buttomCarouselSlide 14s linear infinite;
     color: transparent;
+}
+
+#imageAndTextWraper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    z-index: 1;
+}
+
+.downloadAndButtonWraperButtom {
+    height: 100%;
 }

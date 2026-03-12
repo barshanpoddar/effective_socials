@@ -81,4 +81,64 @@
     align-items: center;
 }
 
- 
+.hidden {
+    opacity: 0;
+    display: none;
+}
+
+
+/* animations */
+
+@keyframes CarouselSlide {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideUpIn {
+    from {
+        transform: translateY(70px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flyInFromTop {
+    from {
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes earthSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    28.57% {
+        transform: rotate(480deg);
+    }
+
+    71.43% {
+        transform: rotate(600deg);
+    }
+
+    100% {
+        transform: rotate(1080deg);
+    }
+}
+
+
